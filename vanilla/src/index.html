@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module" src="./index.js"></script>
+
+    <style>
+      section {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <button id="users">GET /users</button>
+      <pre id="get-users"></pre>
+    </section>
+
+    <section>
+      <input id="user-id" type="text" placeholder="Enter user id" />
+      <button id="user">GET /user/:id</button>
+      <pre id="get-user"></pre>
+    </section>
+
+    <section>
+      <input type="text" id="name" placeholder="Enter name" />
+      <input type="text" id="email" placeholder="e-mail" />
+      <button id="post-user">POST /user</button>
+      <pre id="create-user"></pre>
+    </section>
+  </body>
+</html>
