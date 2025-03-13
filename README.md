@@ -20,3 +20,11 @@ Merk op: als je dit in een eigen project wil gebruiken, moet je de dependency `j
 ## vanilla voorbeeld
 
 Om het vanilla voorbeeld te bekijken, open je het bestand `index.html` in de map `vanilla` in je browser.
+
+In VSCode kan je dit doen door rechtermuisklik te doen op `index.html` en te kiezen voor `Open with Live Server`. Hiervoor moet je wel de extensie `Live Server` installeren.
+
+In WebStorm kan je dit doen door rechtermuisklik te doen op `index.html` en te kiezen voor `Run index.html`.
+
+## Vue voorbeeld
+
+Bekijk hiervoor de README.md in de map `vue`.
