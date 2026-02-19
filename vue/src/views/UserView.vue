@@ -1,41 +1,37 @@
-<script>
-import api from "@/services/api.service";
+<script setup>
+import api from '@/services/api.service';
+import { ref } from 'vue';
 
-export default {
-  data() {
-    return {
-      users: [],
+const users = ref([]);
 
-      userId: null,
-      user: null,
+const userId = ref(null);
+const user = ref(null);
 
-      name: null,
-      email: null,
-      createdUser: null,
-    };
-  },
-  methods: {
-    getUsers() {
-      api.getUsers().then((users) => {
-        this.users = users;
-      });
-    },
-    getUser(id) {
-      api.getUser(id).then((user) => {
-        this.user = user;
-      });
-    },
-    createUser(name, email) {
-      const user = {
-        name,
-        email,
-      }
-      api.createUser(user).then((user) => {
-        this.createdUser = user;
-      })
-    },
-  },
-};
+const name = ref(null);
+const email = ref(null);
+const createdUser = ref(null);
+
+function getUsers() {
+  api.getUsers().then((result) => {
+    users.value = result;
+  });
+}
+
+function getUser(id) {
+  api.getUser(id).then((result) => {
+    user.value = result;
+  });
+}
+
+function createUser(nameValue, emailValue) {
+  const newUser = {
+    name: nameValue,
+    email: emailValue,
+  };
+  api.createUser(newUser).then((result) => {
+    createdUser.value = result;
+  });
+}
 </script>
 
 <template>
