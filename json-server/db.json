@@ -9,6 +9,11 @@
       "id": "2",
       "name": "Jane Duck",
       "email": "jane@duck.com"
+    },
+    {
+      "id": "c937",
+      "name": "Samson",
+      "email": "samson@studio100.be"
     }
   ],
   "posts": [
